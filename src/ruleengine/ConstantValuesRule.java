@@ -27,7 +27,7 @@ package ruleengine;
 public class ConstantValuesRule implements Rule {
 	
 	private final String targetedPropertyName;
-	private final Object[] values;
+	private Object[] values;
 	private boolean finished;
 	private int valueIndex;
 	
@@ -55,5 +55,14 @@ public class ConstantValuesRule implements Rule {
 			valueIndex = 0;
 		return value;
 	}
+	
+	public Object[] getValues() {
+		return values;
+	}
+
+	public void setValues(Object[] values) {
+		this.values = values;
+	}
+	
 	
 }

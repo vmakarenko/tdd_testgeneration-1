@@ -36,8 +36,9 @@ public class RuleEngineTest {
 		addIterationRuleWithoutTriggeringProperties(targetedPropertyName, "value");
 	}
 
-    private void addIterationRuleWithTriggeringProperties(String triggeringProperty, String targetedPropertyName, String... value) {
-    	// TODO
+    private void addIterationRuleWithTriggeringProperties(String triggeringProperty, String targetedPropertyName, String... values) {
+    	ruleEngine.addRule(new TiggeredValuesRule(
+   			ruleEngine.getRules(), triggeringProperty, targetedPropertyName, values));
     }
 
     private void addIterationRuleWithoutTriggeringProperties(

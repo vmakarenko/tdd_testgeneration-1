@@ -27,4 +27,8 @@ class Rules{
 		return rules.containsKey(propertyName);
 	}
 
+	public Rule getRuleForProperty(String propertyName) {
+		return rules.get(propertyName);
+	}
+
 }

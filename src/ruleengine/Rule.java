@@ -12,5 +12,7 @@ public interface Rule {
 	String getTargetedPropertyName();
 	boolean hasFinished();
 	Object nextValue();
+	Object[] getValues();
+	public void setValues(Object[] values);
 	
 }

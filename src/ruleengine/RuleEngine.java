@@ -67,4 +67,8 @@ public class RuleEngine {
 		return state.getAssignedPropertiesAsString();
 	}
 
+	public Rules getRules() {
+		return this.rules;
+	}
+
 }
