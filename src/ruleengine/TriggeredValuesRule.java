@@ -9,9 +9,9 @@ public class TriggeredValuesRule extends ConstantValuesRule implements Rule {
 
 	private Rule triggeringRule;
 	
-	public TriggeredValuesRule(Rules rules, String triggeringPropertyName, String targetedPropertyName, Object[] values) {
+	public TriggeredValuesRule(Rules rules, String triggeringPropertyName, String triggeredPropertyName, Object[] values) {
 		
-		this(rules.getRuleForProperty(triggeringPropertyName), triggeringPropertyName, targetedPropertyName, values);
+		this(rules.getRuleForProperty(triggeringPropertyName), triggeringPropertyName, triggeredPropertyName, values);
 		
 	}
 
